@@ -2,7 +2,7 @@ const express = require("express");
 const { userModel } = require("../Models/user.model");
 const deleteUserRouter = express.Router();
 
-deleteUserRouter.delete("/delete/:id", async (req, res) => {
+deleteUserRouter.delete("/users/:id", async (req, res) => {
   try {
     const Id = req.params.id;
     // console.log(payload);

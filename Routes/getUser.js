@@ -2,7 +2,7 @@ const express = require("express");
 const { userModel } = require("../Models/user.model");
 const getUserRouter = express.Router();
 
-getUserRouter.get("/:id", async (req, res) => {
+getUserRouter.get("/users/:id", async (req, res) => {
     let Id=req.params.id
   try {
     const user = await userModel.findOne({"_id":Id});

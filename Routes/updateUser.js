@@ -2,7 +2,7 @@ const express = require("express");
 const { userModel } = require("../Models/user.model");
 const updateUserRouter = express.Router();
 
-updateUserRouter.put("/update/:id", async (req, res) => {
+updateUserRouter.put("/users/:id", async (req, res) => {
   try {
     const Id = req.params.id;
     // console.log(payload);
